@@ -1,0 +1,13 @@
+.heading{
+    background-image: url("../../assets/images/header-central-de-ajuda.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 112px 0;
+}
+
+.headingTitle{
+    font-family: var(--font-family-popp);
+    font-weight: var(--font-bold);
+    color: var(--color-primary);
+}
