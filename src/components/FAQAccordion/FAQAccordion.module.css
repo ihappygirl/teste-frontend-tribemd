@@ -1,6 +1,7 @@
 .accordionTitle{
     font-weight: var(--font-bold);
     font-size: 18px;
+    text-align: left;
 }
 
 .accordionTitle:hover{
