@@ -1,0 +1,18 @@
+.accordionTitle{
+    font-weight: var(--font-bold);
+    font-size: 18px;
+}
+
+.accordionTitle:hover{
+    background-color: var(--color-primary);
+}
+
+.activeAccordion{
+    background-color: var(--color-primary);
+    color: var(--color-black);
+}
+
+.inactiveAccordion{
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
