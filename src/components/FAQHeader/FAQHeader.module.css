@@ -10,4 +10,12 @@
     font-family: var(--font-family-popp);
     font-weight: var(--font-bold);
     color: var(--color-primary);
+    font-size: 48px;
+    line-height: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .headingTitle{
+        font-size: 36px;
+    }
 }
