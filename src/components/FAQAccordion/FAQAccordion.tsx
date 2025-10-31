@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./FAQAccordion.module.css"
 import { FAQItem } from "../../data/FAQQuestions";
 import { FaPlus, FaMinus } from "react-icons/fa";
