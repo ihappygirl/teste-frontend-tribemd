@@ -3,14 +3,12 @@ import styles from "./FAQAccordion.module.css"
 import { FAQItem } from "../../data/FAQQuestions";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
-export const FAQAccordion = ({ item }: { item: FAQItem }) => {
-    const [isOpen, setIsOpen] = useState(false);
-    
+export const FAQAccordion = ({ item, isOpen, onToggle }: { item: FAQItem, isOpen: boolean, onToggle: () => void }) => {
     return(
         <div key={item.id}>
             <button 
                 className={`rounded-xl py-5 px-3 w-full flex flex-row items-center ${styles.accordionTitle} ${isOpen ? styles.activeAccordion : styles.inactiveAccordion}`} 
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={onToggle}
             >
                 <span>{isOpen ? <FaMinus /> : <FaPlus />}</span>
                 <span className="px-2">{item.question}</span>
